@@ -8,23 +8,33 @@
 </head>
 <body>
     <div class="top-bar">
+        <div class="black-strip">
+            <h1 class="welcome-message">Welcome, User!</h1>
+        </div>
         <div class="button-container">
-            <button class="top-button home-button">
-                <img src="home.png" alt="Home" class="button-icon">
-                Home
-            </button>
-            <div class="top-button help-button">
-                <img src="help.webp" alt="Help" class="button-icon">
-                Help
-                <div class="dropdown">
-                    <a href="faq.html" class="faq-option">FAQ</a>
-                    <a href="#">User Manual</a>
+            <div class="button-strip">
+                <button class="top-button home-button">
+                    <img src="home.png" alt="Home" class="button-icon">
+                    Home
+                </button>
+                <div class="top-button help-button">
+                    <img src="help.webp" alt="Help" class="button-icon">
+                    Help
+                    <div class="dropdown">
+                       <a href="faq.html" class="faq-option">FAQ</a>
+                       <a href="#">User Manual</a>
+                    </div>
                 </div>
+                <button class="top-button profile-button">
+                    <img src="profile.png" alt="Profile" class="button-icon">
+                    Profile
+		    <div class="dropdown">
+       			<a href="login.html" class="profile-option">Sign in</a>
+       			<a href="signup.html" class="profile-option">Sign up</a>
+      			<a href="#">Settings</a>
+   		    </div>
+                </button>
             </div>
-            <button class="top-button profile-button">
-                <img src="profile.png" alt="Profile" class="button-icon">
-                Profile
-            </button>
         </div>
     </div>
     <div class="container">
@@ -36,6 +46,21 @@
             <input type="text" id="searchInput" placeholder="Search...">
             <button id="searchButton">Search</button>
         </div>
+    </div>
+    <div class="about-section">
+      <h2 class="about-title">About</h2>
+    <p>
+        TheoryOn is a tool designed to integrate the behavioral sciences by removing      	barriers that currently exist within and between disciplines.
+    </p>
+    <p>
+        You can start with a construct search or a construct relationship search (more than 	one construct). The system will return relevant constructs as well as the related 	theoretical model for a paper.
+    </p>
+    <p>
+        You can save relevant constructs and their related theoretical models in a 	workbench.
+    </p>
+    <p>
+        Finally, you can visualize your selected theoretical models embedded from different 	articles in a canvas and start to organize and integrate theoretical models to 	identify research gaps and opportunities.
+    </p>
     </div>
     <script src="main.js"></script>
 </body>

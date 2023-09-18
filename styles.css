@@ -1,5 +1,3 @@
-/* css/styles.css */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,16 +8,15 @@ body {
     text-align: center;
     padding: 100px 0;
 }
-
-h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    background-color: #CFB87C;
-    color: #000;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 10px;
-}
+#h1 {     #if stays, welcome message has gold bg & if not here, theoryon loses bg
+ #   font-size: 32px;
+  #  margin-bottom: 20px;
+   # background-color: #CFB87C;
+    #color: #000;
+    #display: inline-block;
+    #padding: 10px 20px;
+    #border-radius: 10px;
+#}
 
 .search-container {
     display: flex;
@@ -40,7 +37,6 @@ h1 {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1); /* Only apply shadow to the input */
     outline: none;
 }
-
 #searchButton {
     background-color: #CFB87C;
     color: #000; /* Updated text color */
@@ -70,12 +66,31 @@ h1 {
     padding: 10px;
     border-radius: 10px;
 }
+.black-strip {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+}
 
-.top-bar {
+.welcome-message {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.button-bar {
+    /* Position the buttons below the black strip */
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+
+.button-strip {
     display: flex;
-    justify-content: flex-end;
+    /* Align the buttons horizontally */
     align-items: center;
-    padding: 10px 20px;
 }
 
 .button-container {
@@ -83,12 +98,13 @@ h1 {
     align-items: center;
 }
 
+
 .top-button {
     background-color: transparent;
     border: none;
     color: #000;
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 0;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -96,7 +112,6 @@ h1 {
     padding: 5px 10px; /* Add padding to create the effect */
     border-radius: 5px; /* Add border radius for the rounded rectangle effect */
 }
-
 .button-icon {
     width: 20px;
     height: 20px;
@@ -142,4 +157,80 @@ h1 {
 .dropdown a:hover {
     background-color: #f2f2f2;
     color: #000;
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.about-section {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #CFB87C;
+    border-top: 1px solid #ccc;
+}
+
+.about-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.profile-button {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    margin-left: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add background-color transition */
+    padding: 5px 10px; /* Add padding to create the effect */
+    border-radius: 5px; /* Add border radius for the rounded rectangle effect */
+}
+
+.profile-button:hover {
+    color: #000;
+    background-color: #A2A4A3; /* Add background color on hover */
+}
+
+.dropdown {
+    position: absolute;
+    background-color: #CFB87C;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+}
+
+.profile-button .dropdown {
+    position: absolute;
+    top: 3.5%;
+    /*margin-top: 1px; /* Adjust the margin to control the gap between button and dropdown */
+    background-color: #CFB87C;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+}
+
+.profile-button .dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.profile-button .dropdown a:hover {
+    background-color: #f2f2f2;
+    color: black;
 }
